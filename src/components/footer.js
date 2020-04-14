@@ -113,12 +113,14 @@ export default ({ children }) => {
         <ul className="nav-cont">
           <li>&copy; {showYear}</li>
           <li>{data.site.siteMetadata.author}</li>
-          <ListLink to="/privacy/">Privacy</ListLink>
-          <ListLink to="/cookies/">Cookies</ListLink>
+          <ListLink to="/contact/">Contact</ListLink>
         </ul>
         <div className="socials-cont">
-          <h2>Find out more</h2>
-          <p>For details about the developer of this theme, please visit</p>
+          <h2>Keep in touch</h2>
+          <p>
+            To keep in touch, please visit our social media pages or use the
+            chat
+          </p>
           <hr />
           <ul className="socials">
             {socials.map((item, index) => {

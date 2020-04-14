@@ -5,7 +5,7 @@ import { FaChevronRight } from "react-icons/fa"
 const Button = () => {
   return (
     <ButtonWrapper>
-      Read Article <FaChevronRight className="arrow" />
+      Learn More <FaChevronRight className="arrow" />
     </ButtonWrapper>
   )
 }

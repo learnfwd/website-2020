@@ -7,15 +7,14 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Bonneville`,
-    titleTemplate: `%s | A starter theme for Gatsby`,
-    siteUrl: `https://bonneville.netlify.com`,
-    description: `A starter theme for Gatsby`,
-    author: `Morgan Baker`,
-    twitterUsername: `@bonneville`,
-    twitterURL: `https://twitter.com/`,
-    linkedInURL: `https://www.linkedin.com/in/morgan-baker-developer-inverness`,
-    githubURL: `https://github.com/bagseye`,
+    title: `Learn Forward`,
+    titleTemplate: `%s | Learn Forward`,
+    siteUrl: `https://learnfwd.com`,
+    description: `A website`,
+    author: `Learn Forward`,
+    twitterUsername: `@learnfwd`,
+    twitterURL: `https://twitter.com/learnfwd`,
+    linkedInURL: `https://www.linkedin.com/in/learnfwd`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -25,8 +24,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Bonneville - Gatsby Starter Theme`,
-        short_name: `Bonneville`,
+        name: `Learn Forwards`,
+        short_name: `LFWD`,
         start_url: `/`,
         background_color: `#0027EC`,
         theme_color: `#0027EC`,
@@ -35,12 +34,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    // `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "ENTER YOUR GA TRACKING ID HERE",
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
         head: false,
+        respectDNT: true,
+        pageTransitionDelay: 0,
+        cookieDomain: "learnfwd.com",
       },
     },
     {

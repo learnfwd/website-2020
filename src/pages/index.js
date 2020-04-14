@@ -11,13 +11,8 @@ export default ({ data }) => {
   return (
     <Layout>
       <Seo />
-      <h1>
-        My name is Bonneville. I'm a starter theme for Gatsby and I like to talk
-        as if I am a living thing
-      </h1>
-      <h4 className={styles.feature}>
-        {data.allMarkdownRemark.totalCount} Featured Posts
-      </h4>
+      <h1>This is Learn Forward</h1>
+      <h4 className={styles.feature}>Noteworthy Projects</h4>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <article className={styles.item}>
           <div className={styles.title}>
@@ -31,7 +26,6 @@ export default ({ data }) => {
               <Link className="btn-link" to={node.frontmatter.path}>
                 <Button />
               </Link>
-              <h4>{node.frontmatter.date}</h4>
             </div>
           </div>
         </article>
@@ -52,7 +46,6 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "MMMM DD, YY")
             path
           }
           excerpt

@@ -168,8 +168,8 @@ export default ({ children }) => {
           <nav className="nav-cont">
             <ul>
               <ListLink to="/">Home</ListLink>
-              <ListLink to="/profile/">Profile</ListLink>
-              <ListLink to="/blog/">Blog</ListLink>
+              <ListLink to="/products/">Products</ListLink>
+              <ListLink to="/projects/">Projects</ListLink>
               <ListLink to="/contact/">Contact</ListLink>
             </ul>
           </nav>
